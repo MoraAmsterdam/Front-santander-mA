@@ -18,8 +18,9 @@ button{
 
 .header{
     margin: 40px 20px 0px 20px;
-    border: 1px solid black;
     font-size: 0;
+    font-family: sans-serif;
+    height: 45px;
 }
 
 li{
@@ -40,19 +41,41 @@ li{
 
 .navbar{
     width: 70%;
-    text-align: center;
+    text-align: left;
     color: #025157;
     font-weight: 500;
 }
 
+.menu-item{
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
 .actions{
     width: 15%;
-    text-align: right;
+    text-align: left;
     font-size: 14px;
     font-weight: 600;
 }
 
+.actions > *{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.actions a{
+    color: #67b54b;
+}
+
+.actions button{
+    color: #ffffff;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 5px;
+}
+
 .logo > img{
     height: 100%;
-    border: 1px solid black;
 }
