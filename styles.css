@@ -29,10 +29,10 @@ button{
     margin-left: 10px;
 }
 
-/* .main{
+main{
     margin-top: 130px;
     text-align: center;
-} */
+}
 
 .fixed-header{
     position: fixed;
@@ -67,10 +67,10 @@ li{
 }
 
 .navbar{
-    width: 70%;
     text-align: center;
     color: #025157;
     font-weight: 500;
+    background-color: black;
 }
 
 .menu-item{
@@ -127,6 +127,25 @@ li{
 
 .publish > form{
     display: flex;
+    flex-direction: column;
+}
+
+.publish > form > input{
+    width: 25%;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.publish > form > .formu{
+    margin-left: 550px;
+}
+
+.publish > form > button{
+    width: 15%;
+    margin: auto;
 }
 
 .publish > form p{
@@ -197,29 +216,29 @@ li{
     flex: 1;
 }
 
-.success-stories .stories-carousel .card{
+.success-stories .stories-carousel .crd{
     max-width: 370px;
     width: 100%;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-.success-stories .stories-carousel .card .card-media figure{
+.success-stories .stories-carousel .crd .crd-media figure{
     margin-top: 0;
 }
 
-.success-stories .stories-carousel .card .card-media img{
+.success-stories .stories-carousel .crd .crd-media img{
     width: 100%;
     max-height: 16vw;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.success-stories .stories-carousel .card .card-media{
+.success-stories .stories-carousel .crd .crd-media{
     position: relative;
 }
 
-.success-stories .stories-carousel .card .card-media .company{
+.success-stories .stories-carousel .crd .crd-media .company{
     position: absolute;
     bottom: -20px;
     right: 20px;
@@ -232,16 +251,16 @@ li{
     align-items: center;
 }
 
-.success-stories .stories-carousel .card .card-media .company img{
+.success-stories .stories-carousel .crd .crd-media .company img{
     max-width: 75%;
 }
 
-.success-stories .stories-carousel .card .card-body,
-.success-stories .stories-carousel .card .card-footer{
+.success-stories .stories-carousel .crd .crd-body,
+.success-stories .stories-carousel .crd .crd-footer{
     padding: 25px;
 }
 
-.success-stories .stories-carousel .card .card-body h4{
+.success-stories .stories-carousel .crd .crd-body h4{
     color: #025157;
     font-size: 18px;
     font-weight: 600;
@@ -249,35 +268,35 @@ li{
     margin-bottom: 12px;
 }
 
-.success-stories .stories-carousel .card .card-body h3{
+.success-stories .stories-carousel .crd .crd-body h3{
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 20px;
 }
 
-.success-stories .stories-carousel .card .card-body .results{
+.success-stories .stories-carousel .crd .crd-body .results{
     display: flex;
     align-items: center;
     color: #828282;
 }
 
-.success-stories .stories-carousel .card .card-body .results img{
+.success-stories .stories-carousel .crd .crd-body .results img{
     width: 26px;
     margin-right: 20px;
 }
 
-.success-stories .stories-carousel .card .card-body .results p{
+.success-stories .stories-carousel .crd .crd-body .results p{
     margin-top: 0;
 }
 
-.success-stories .stories-carousel .card .card-footer{
+.success-stories .stories-carousel .crd .crd-footer{
     margin-bottom: 20px;
     background-color: unset;
     border-top: unset;
 }
 
-.success-stories .stories-carousel .card .card-footer button{
+.success-stories .stories-carousel .crd .crd-footer button{
     display: block;
     margin-left: 0;
     border-radius: 5px;
@@ -408,3 +427,237 @@ li{
   #main div:nth-of-type(2) {
     flex-basis: 100px;
   } */
+
+.how-it-works{
+  background-color: #fffbf7;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.how-it-works .title{
+    color: #025157;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: "Alegreya", serif;
+  margin-bottom: 8px;
+}
+
+.how-it-works .description{
+    max-width: 60%;
+  color: #46484c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.how-it-works .description a{
+    color: #67b54b;
+  text-decoration: none;
+}
+
+.how-it-works button{
+    font-size: 14px;
+  font-weight: 600;
+  padding-top: 12px 12px 6px 12px;
+  height: 45px;
+  margin-left: 0;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+.how-it-works .steps{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 70px;
+}
+
+.how-it-works .steps .card-step{
+    background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.how-it-works .steps .card-step .card-step-img{
+    position: relative;
+  height: 350px;
+}
+
+.how-it-works .steps .card-step .card-step-img .card-icon{
+    position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 21px;
+}
+
+.how-it-works .steps .card-step .card-step-img .card-stp-pub{
+    width: 100%;
+  height: 100%;
+}
+
+.how-it-works .steps .card-step .card-step-body{
+    padding: 25px;
+}
+
+.how-it-works .steps .card-step .card-step-body h3{
+    font-size: 30px;
+  line-height: 36px;
+  font-family: "Alegreya", serif;
+  color: #025157;
+  font-weight: 400;
+  text-align: center;
+}
+
+.how-it-works .steps .card-step .card-step-body p{
+    font-size: 15px;
+  line-height: 1.5;
+  color: #46484c;
+  font-weight: 400;
+  height: 85px;
+  margin-bottom: 16px;
+}
+
+.how-it-works .steps .card-step .card-step-body a{
+    font-size: 16px;
+  line-height: 1.4;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 575px){
+    body{
+        background-color: #fffbf7;
+    }
+
+    /*.navbar,
+    .actions{
+        display: none;
+    }*/
+
+    h1{
+        font-size: 30px;
+    }
+
+    main{
+        margin-top: 130px;
+    }
+
+    .banner > img{
+        width: 100%;
+    }
+
+    .publish > form{
+        flex-direction: column;
+    }
+
+    .publish > form > p{
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish > form > input{
+        width: 90%;
+        margin: 10px auto;
+        border: 1px solid black;
+        padding: 10px;
+        height: 50px;
+    }
+
+    .publish > form > button{
+        width: 50%;
+        margin: auto;
+    }
+
+    .promo{
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .explanatory-video > video{
+        width: 100%;
+    }
+
+    .promo > .publish > form > div > input{
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .publish{
+        margin-top: 10px;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+      }
+
+      .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
+      .feature-image {
+        display: none;
+      }
+
+      .success-stories{
+        flex-direction: column;
+    }
+
+    .success-stories .overview{
+        max-width: 90%;
+        padding-right: 5px;
+    }
+
+    .success-stories .overview img{
+        display: none;
+    }
+
+    .success-stories .overview h2{
+        font-size: 30px;
+        line-height: 1.2;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .success-stories .stories-carousel .crd{
+        margin-top: 10px;
+    }
+
+    .success-stories .stories-carousel .carousel-innr .carousel-itm .crd .crd-media img{
+        display: none;
+    }
+
+    .success-stories .stories-carousel .carousel-innr .carousel-itm .crd .crd-media .company{
+        display: none;
+    }
+
+    .how-it-works .title{
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .how-it-works .description{
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .how-it-works .steps{
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+    }
+
+    .how-it-works .steps .card-step .card-step-img{
+        display: none;
+    }
+
+    .how-it-works .steps .card-step{
+        margin: 10px;
+    }
+}
