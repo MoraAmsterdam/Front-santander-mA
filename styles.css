@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body{
-    background-color: #bb9167;
+    background-color: #fffbf7;
 }
 
 h1{
@@ -14,6 +22,25 @@ p{
 button{
     color: #fff;
     background-color: #025157;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: 10px;
+}
+
+.main{
+    margin-top: 130px;
+    text-align: center;
+}
+
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+    z-index: 1;
 }
 
 .header{
@@ -78,4 +105,184 @@ li{
 
 .logo > img{
     height: 100%;
+}
+
+.publish{
+    margin-left: 20px;
+}
+
+.publish h3{
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+
+.publish > p{
+    color: #343434;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish > form{
+    display: flex;
+}
+
+.publish > form p{
+    color: #025157;
+    margin-right: 18px;
+}
+
+.promo{
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.explanatory-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explanatory-video img{
+    width: 120px;
+    margin-top: 10px;
+}
+
+.success-stories{
+    background-color: #A1D683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.success-stories .overview{
+    flex: 2;
+    padding-right: 100px;
+}
+
+.success-stories .overview h2{
+    font-size: 51px;
+    font-family: "Alegreya", serif;
+    line-height: 61px;
+    color: #025157;
+}
+
+.success-stories .overview p{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2;
+    color: #343434;
+}
+
+.success-stories .overview button{
+    font-size: 14px;
+    height: 45px;
+    border-radius: 8px;
+    padding: 12px 12px 6px 12px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.success-stories .overview img{
+    width: 500px;
+    max-width: 100%;
+}
+
+.success-stories .stories-carousel{
+    flex: 1;
+}
+
+.success-stories .stories-carousel .card{
+    max-width: 370px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.success-stories .stories-carousel .card .card-media figure{
+    margin-top: 0;
+}
+
+.success-stories .stories-carousel .card .card-media img{
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.success-stories .stories-carousel .card .card-media{
+    position: relative;
+}
+
+.success-stories .stories-carousel .card .card-media .company{
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-stories .stories-carousel .card .card-media .company img{
+    max-width: 75%;
+}
+
+.success-stories .stories-carousel .card .card-body,
+.success-stories .stories-carousel .card .card-footer{
+    padding: 25px;
+}
+
+.success-stories .stories-carousel .card .card-body h4{
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.success-stories .stories-carousel .card .card-body h3{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.success-stories .stories-carousel .card .card-body .results{
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.success-stories .stories-carousel .card .card-body .results img{
+    width: 26px;
+    margin-right: 20px;
+}
+
+.success-stories .stories-carousel .card .card-body .results p{
+    margin-top: 0;
+}
+
+.success-stories .stories-carousel .card .card-footer{
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+
+.success-stories .stories-carousel .card .card-footer button{
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
 }
